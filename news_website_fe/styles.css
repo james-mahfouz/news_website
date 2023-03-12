@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.6);
+    margin: 0;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    max-width: 650px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.article{
+    width: 100%;
+}
