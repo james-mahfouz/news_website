@@ -2,7 +2,9 @@ $(document).ready(function(){
     $.ajax({
         url: "http://localhost/news_website/news_website_be/news.php",
         dataTYPE: "json",
-        success: function(news){
+        success: function(response){
+            let news = JSON.parse(response)
+            console.log(news)
             $.each(news, function(index,article){
                 var html = '<div class="article">' +
                     '<h2 class="title">' + article.title + '</h2>' +
